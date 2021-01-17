@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script LANGUAGE="JavaScript"> 
+	var url_list = {
+	  'home':'http://simmo.cn:5000'
+		'blog':'http://simmo.cn:886'
+		'pic':'https://simmo.cn:2333'
+		'send':'http://simmo.cn:1443'
+		'wiki':'http://simmo.cn:3000'
+	};
+	
+	
+	var url = window.location.href;
+  var domain = url.split('/'); //以“/”进行分割
+  domain = domain[2].split('.');
+	url = url_list[domain[0]];
+	window.location=url; 
+	</script>
+
+	<meta charset="UTF-8">
+	<title>跳转页面</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body >
+</body>
+</html>
