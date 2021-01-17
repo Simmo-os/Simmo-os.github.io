@@ -3,16 +3,16 @@
 <head>
 	<script LANGUAGE="JavaScript"> 
 	var url_list = {
-	  'home':'http://simmo.cn:5000',
-	'blog':'http://simmo.cn:886',
-'pic':'https://simmo.cn:2333',
-'send':'http://simmo.cn:1443',
-'wiki':'http://simmo.cn:3000'
-	};
+		'home':'http://simmo.cn:5000',
+		'blog':'http://simmo.cn:886',
+		'pic':'https://simmo.cn:2333',
+		'send':'http://simmo.cn:1443',
+		'wiki':'http://simmo.cn:3000'
+		};
 	
 	
 	var url = window.location.href;
-			alert(domain);
+	alert(url);
   	var domain = url.split('/'); //以“/”进行分割
   	domain = domain[2].split('.');
 	url = url_list[domain[0]];
